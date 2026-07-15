@@ -1,0 +1,39 @@
+import { createClient } from "@supabase/supabase-js";
+
+const supabaseUrl = import.meta.env.VITE_PUBLIC_SUPABASE_URL;
+const supabaseAnonKey = import.meta.env.VITE_PUBLIC_SUPABASE_ANON_KEY;
+
+if (!supabaseUrl || !supabaseAnonKey) {
+  throw new Error("Missing Supabase environment variables");
+}
+
+export const supabase = createClient(supabaseUrl, supabaseAnonKey);
+
+export type Tables = {
+  posts: {
+    id: string; title: string; slug: string; content: string | null;
+    excerpt: string | null; cover_image_url: string | null;
+    category: string | null; tags: string[] | null; status: string;
+    created_at: string; updated_at: string; published_at: string | null;
+    read_time_minutes: number | null; views: number;
+  };
+  comments: {
+    id: string; post_id: string; commenter_name: string;
+    comment_body: string; approved: boolean; created_at: string;
+  };
+  community_posts: {
+    id: string; user_id: string; body: string; image_url: string | null;
+    likes_count: number; comments_count: number; created_at: string;
+  };
+  profiles: {
+    id: string; user_id: string; username: string | null;
+    display_name: string | null; bio: string | null; website: string | null;
+    created_at: string; updated_at: string;
+  };
+  messages: {
+    id: string; sender_id: string; receiver_id: string;
+    body: string; created_at: string; read_at: string | null;
+  };
+  admin_users: { user_id: string; created_at: string; };
+  site_settings: { id: string; blog_name: string; singleton: boolean; updated_at: string; };
+};
