@@ -1,0 +1,1 @@
+export default function ConvertAllToHtml({ onClose }: { onClose: () => void }) { return <div onClick={onClose}>ConvertAllToHtml</div>; }

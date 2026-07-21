@@ -1,2 +1,2 @@
-// Mock blog post data
-// Full post content, metadata, and category information.
+export const blogPosts: any[] = [];
+export const featuredPost = null;

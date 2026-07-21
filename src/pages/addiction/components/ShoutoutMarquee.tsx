@@ -1,2 +1,1 @@
-// Shoutout Marquee component - full code available in source download
-// Animated marquee of community shoutouts.
+export default function ShoutoutMarquee() { return <div>ShoutoutMarquee</div>; }

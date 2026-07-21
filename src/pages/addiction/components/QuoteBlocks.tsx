@@ -1,2 +1,1 @@
-// Quote Blocks component - full code available in source download
-// Inspirational quote display for the Addiction Files page.
+export default function QuoteBlocks() { return <div>QuoteBlocks</div>; }

@@ -8,16 +8,5 @@ import ShoutoutMarquee from "./components/ShoutoutMarquee";
 import ClosingSection from "./components/ClosingSection";
 
 export default function AddictionFiles() {
-  return (
-    <div className="min-h-screen bg-white">
-      <NavBar />
-      <AddictionHeader />
-      <QuoteBlocks />
-      <StreakSection />
-      <AddictionPosts />
-      <ShoutoutMarquee />
-      <ClosingSection />
-      <Footer />
-    </div>
-  );
+  return (<div className="min-h-screen bg-white"><NavBar /><AddictionHeader /><QuoteBlocks /><StreakSection /><AddictionPosts /><ShoutoutMarquee /><ClosingSection /><Footer /></div>);
 }

@@ -1,2 +1,2 @@
-// Game types - full code available in source download
-// TypeScript type definitions for the Compound Life Canvas game.
+export type CharacterStyle = "pixel"|"anime";
+export interface GameState { player: any; score: number; level: number; }

@@ -1,2 +1,2 @@
-// ESLint configuration for The Compound
-// Full config available in source download
+import js from '@eslint/js';
+export default [js.configs.recommended];

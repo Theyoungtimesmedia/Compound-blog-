@@ -1,2 +1,1 @@
-// Game Canvas component - full code available in source download
-// Main HTML5 Canvas renderer for the Compound Life game.
+export default function GameCanvas() { return <div className="border-2 border-black rounded-xl p-8 text-center"><p className="text-lg font-black text-black">Compound Life Game</p><p className="text-sm text-black/60">Full game available in source download</p></div>; }

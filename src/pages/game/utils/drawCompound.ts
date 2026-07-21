@@ -1,2 +1,4 @@
-// Draw Compound utility - full code available in source download
-// Canvas drawing functions for the game environment.
+export const CANVAS_W = 960;
+export const CANVAS_H = 720;
+export function isWalkable() { return true; }
+export function drawCompound() {};

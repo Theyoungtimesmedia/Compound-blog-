@@ -1,2 +1,4 @@
-// Mock data for the Community page
-// Includes feed posts, likes, comments, and trending topics.
+export const communityPosts: any[] = [];
+export const communityRules: string[] = [];
+export const compassResponses: string[] = [];
+export const messagesData: any[] = [];

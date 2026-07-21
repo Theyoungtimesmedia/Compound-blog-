@@ -1,2 +1,1 @@
-// Post Composer component - full code available in source download
-// New post creation form for the community feed.
+export default function PostComposer({ onPost }: { onPost: (p:any) => void }) { return <div>PostComposer</div>; }

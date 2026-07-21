@@ -1,2 +1,1 @@
-// Addiction Header component - full code available in source download
-// Hero section for the Addiction Files page.
+export default function AddictionHeader() { return <div>AddictionHeader</div>; }
