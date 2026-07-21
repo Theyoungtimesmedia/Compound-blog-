@@ -11,7 +11,7 @@ export default defineConfig({
   plugins: [react()],
   base,
   css: { postcss: { plugins: [tailwindcss, autoprefixer] } },
-  build: { sourcemap: true, outDir: "out" },
+  build: { sourcemap: true, outDir: "dist" },
   resolve: { alias: { "@": resolve(__dirname, "./src") } },
   server: { port: 3000, host: "0.0.0.0" },
 });
